@@ -1,29 +1,77 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+# 3D Renderer in C++ with Raylib
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+## Overview
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
+This project is a simple yet flexible **3D object renderer** built from scratch in C++ using [Raylib](https://www.raylib.com/). It’s designed as a learning exercise and a portfolio project to demonstrate fundamental 3D concepts, object-oriented programming, and graphics mathematics.
 
-# Video Tutorial
+## Why 3D Rendering?
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+Rendering in 3D is a big leap from 2D:
+- Requires understanding geometry in three dimensions.
+- Transformations (movement, rotation, scaling) are more involved.
+- Objects are built and manipulated from vertices and faces (triangles).
+- Lighting and perspective add realism and complexity.
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+## Key Features
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+- **Custom 3D Mesh Representation:** OOP-based mesh handling (vertices, faces, normals)
+- **Wireframe/Solid Rendering:** Switch easily between wireframe and solid visuals
+- **Basic Transformations:** Position, rotation (Euler angles), and scaling for objects
+- **Interactive Camera:** Orbit, pan, and zoom with mouse/keyboard
+- **Modular Design:** Easy to add new shapes or rendering techniques
+- **Extensive Code Comments:** Every block explained for learners
+
+## What I Learned
+
+- 3D math fundamentals (vectors, dot/cross products, normals)
+- Structure and transformations of 3D meshes
+- Object-oriented design for graphics projects
+- Basics of rendering pipelines (projection, rasterization, depth)
+- Integration of Raylib’s 3D API
+
+
+## Getting Started
+
+### Prerequisites
+
+- **C++ Compiler** (GCC, MSVC, Clang, etc.)
+- **Raylib Library** ([Install instructions](https://www.raylib.com/))
+    - On Linux: `sudo apt-get install libraylib-dev`
+    - On Windows/Mac: Follow Raylib’s setup instructions
+
+
+Alternatively, open and run in your favorite IDE!
+
+## Project Structure
+
+├── main.cpp # Application entrypoint
+├── Mesh3D.h/cpp # 3D mesh class (vertices, faces, transformations)
+├── CubeFactory.h/cpp # Utility for creating cube objects
+├── MeshRenderer.h/cpp # Rendering logic (wireframe, solid)
+├── Vector3D.h/cpp # 3D vector math
+├── README.md
+
+
+## How It Works
+
+- **Mesh3D**: Manages object geometry and transformations.
+- **CubeFactory**: Generates vertex/face data for cubes.
+- **MeshRenderer**: Draws the mesh using Raylib’s 3D functions.
+- **main.cpp**: Sets up camera controls, user input, animation, and rendering.
+
+## Customization
+
+- Add new shapes by building additional factories.
+- Integrate new rendering modes (lighting, textures, etc.).
+- Tweak camera controls for different experiences.
+
+## Contributing
+
+Open to feedback, suggestions, and improvements!
+- Fork the repo
+- Submit pull requests
+- Create issues for bugs or feature requests
+
+
+**Feedback welcome!**  
+If you found this project useful or have ideas for improvement, please let me know via issues or comments.
